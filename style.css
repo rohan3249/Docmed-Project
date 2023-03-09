@@ -1,0 +1,1151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    transition: all linear .4s;
+    scroll-behavior: smooth;
+}
+:root{
+    --p-front:16px;
+    --basic-color:#009DFF;
+    --p-front-weight:300;
+    --p-color:#727272;
+    --font-color:rgb(31,31,31);
+}
+/*top-header start*/
+.header-top-area{
+    padding: 13px 9%;
+    background-color: #f5fbff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-top-area .contact{
+    display: flex;
+}
+.contact .email{
+    margin-right: 60px;
+}
+.social i{
+    color: rgb(145, 145, 145);
+    padding-right: 6px;
+    font-size: 20px;
+}
+.contact span{
+    color: rgb(145, 145, 145);
+    font-size: 13px;
+}
+.contact i{
+    color: #5DB2FF;
+}
+/*top-header end*/
+
+
+/*header start*/
+header{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    padding:0 10%;
+    top: 0;
+    align-items: center;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+    background: #fff;
+    transition: all .4s;
+}
+header a{
+    padding: 15px 0px;
+    align-items: center;
+}
+header a img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+header .nav{
+    display: flex;
+}
+header .nav li a{
+    padding: 0 30px;
+    font-weight: 500;
+    color: var(--p-color);
+}
+header #check{
+    display: none;
+}
+#menu-icon{
+    display: none;
+}
+header .appointment{
+    padding: 10px 25px;
+    background-color: var(--basic-color);
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: var(--p-color);
+    font-weight: 400;
+}
+header .appointment:hover{
+    background-color: #fff;
+    color: var(--basic-color);
+    border: 1px solid var(--basic-color);
+    transition: all ease-in 0.2s;
+}
+/*header end*/
+
+
+/*home start*/
+#home{
+    width: 100%;
+    height: 106vh;
+    background-image: url(images/asset\ 16.png);
+    background-position: center;
+    align-items: center;
+    background-size: cover;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+.text h1{
+    font-size: 70px;
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 84px;
+    color: rgb(31, 31, 31);
+}
+.text h2{
+    font-size: 70px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: rgb(31, 31, 31);
+    text-transform: capitalize;
+}
+.text p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgb(114, 114, 114);
+    margin-bottom: 40px;
+}
+.text a{
+    padding: 18px 45px;
+    background-color: var(--basic-color);
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: var(--p-color);
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+.text a:hover{
+    background-color: #fff;
+    color: var(--basic-color);
+    border: 1px solid var(--basic-color);
+    transition: all .1s;
+}
+.box{
+    padding: 0 10%;
+    background-color: #83C4FF;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(343px,auto));
+}
+.box div:nth-child(2){
+    background-color: var(--basic-color);
+    padding-left: 30px;
+}
+.box div:nth-child(3){
+    padding-left: 30px;
+}
+.box span{
+    font-size: 50px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.box h3{
+    font-size: 26px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.box p{
+    font-size: var(--p-front);
+    font-weight: 400;
+    color: #fff;
+    line-height: 30px;
+}
+.box .bed{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    line-height: 120px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+.box .bed:hover{
+    background-color: #fff;
+    color: var(--basic-color);
+    transition: all .1s;
+}
+
+/*home end*/
+
+/*docmed start*/
+section{
+    padding: 9% 10%;
+}
+.docmed{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5rem;
+}
+.docmed .image{
+    position: relative;
+}
+.docmed .image img{
+    max-width: 100%;
+    width: 362px;
+    height: auto;
+}
+.docmed img:nth-child(2){
+    position: absolute;
+    top: 20%;
+    left: 22%;
+}
+.health h3{
+    font-size: 18px;
+    font-weight: 400;
+    color: #1F1F1F;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 9;
+    padding-bottom: 9px;
+}
+.health h2{
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.health .esteem{
+    line-height: 28px;
+    color: var(--p-color);
+    font-weight: var(--p-front-weight);
+    font-size: var(--p-front);
+    margin-bottom: 20px;
+}
+.health .apartments{
+    display: flex;
+}
+.health p{
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.health a{
+    padding: 10px 30px;
+    color: var(--basic-color);
+    border: 1px solid var(--basic-color);
+    line-height: 140px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.health a:hover{
+    background-color: var(--basic-color);
+    color: #fff;
+    transition: all .2s;
+}
+/*docmed end*/
+
+/*department start*/
+#department{
+    background-color: #f5fbff;
+}
+.text3{
+    text-align: center;
+}
+.text3 h1{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 48px;
+    color: #1F1F1F;
+    position: relative;
+    z-index: 9;
+    padding-bottom: 15px;
+}
+.text3 p{
+    color: var(--p-color);
+    font-size: var(--p-front);
+    font-weight: var(--p-front-weight);
+    padding-bottom: 9%;
+}
+.service{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,auto));
+    gap: 30px;
+}
+.service .test{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.05);
+}
+.test figure{
+    overflow: hidden;
+}
+.test img{
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+.test:hover img{
+    transform: scale(1.3);
+}
+
+.service .test .text4{
+    padding-left: 30px;
+    margin-top: 20px;
+}
+.service .test .text4 h3{
+    color: rgb(31, 31, 31);
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 33px;
+    text-transform: capitalize;
+}
+.service .test .text4 p{
+    color: var(--p-color);
+    font-size: var(--p-front);
+    font-weight: var(--p-front-weight);
+}
+.service .test .text4 a{
+    line-height: 60px;
+    color: var(--basic-color);
+    cursor: pointer;
+}
+.service .test .text4 a:hover{
+    text-decoration: underline;
+}
+/*department end*/
+
+/*text start*/
+.img-text{
+    background-color: #f5fbff;
+}
+.donec{
+    width: 100%;
+    max-width: 100%;
+    height: 38rem;
+    background-image: url(images/asset\ 18.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+.donec .text4{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 40%;
+}
+.donec .text4 p{
+    font-size: 20px;
+    margin-bottom: 80px;
+}
+.donec .text4 h6{
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 30px;
+    text-decoration: overline;
+}
+
+
+.tab .text5 span{
+    background: #5DB2FF;
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    line-height: 75px;
+    border-radius: 50%;
+}
+.tab .text5 h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: #1F1F1F;
+    margin-top: 16px;
+    margin-bottom: 14px;
+}
+.tab .text5 p{
+    color: #727272;
+    line-height: 28px;
+    margin-bottom: 0;
+    font-weight: var(--p-front-weight);
+}
+
+
+.mytab{
+    position: relative;
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.mytab input[type="radio"]{
+   display: none;
+}
+.mytab .click-tab{
+    display: flex;
+    display: inline-block;
+}
+.mytab label{
+    background-color: #f5fbff;
+    display: inline-block;
+    padding: 30px 80px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    color: #1F1F1F;
+    text-transform: capitalize;
+}
+
+.click-tab .tab{
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 0;
+    display: flex;
+    padding: 7% 10%;
+}
+.click-tab input[id^="tab"]:checked + label{
+    background-color: #fff;
+}
+/*text end*/
+
+/*doctors section start*/
+#doctors{
+    padding: 17% 10% 10%;
+}
+#doctors h1{
+    font-size: 36px;
+    font-weight: 500;
+    color: #1F1F1F;
+    text-transform: capitalize;
+    margin-top: 36rem; 
+}
+.expert{ 
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    gap: 30px;
+    text-align: center;
+}
+.expert .doctor{
+    background-color: #f5fbff;
+    overflow: hidden;
+    transition: all .1s;
+}
+.expert figure{
+    overflow: hidden;
+}
+.expert figure img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: all ease-in-out .2s;
+}
+.expert figure:hover img{
+    transform: scale(1.1);
+}
+.expert h3{
+    font-size: 20px;
+    font-weight: 500;
+    transition: all .3s;
+    text-transform: capitalize;
+    margin-top: 12px;
+}
+.expert h6{
+   text-transform: capitalize;
+   font-size: 14px;
+   font-weight: var(--p-front-weight);
+   padding-bottom: 20px;
+}
+.expert .doctor:hover{
+    background-color: var(--basic-color);
+    color: #fff;
+    transition: all ease-in .1s;
+}
+/*doctors section end*/
+
+/*contact section start*/
+#contact{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.number{
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+    padding: 14% 11%;
+    background: linear-gradient(0deg, rgb(9 9 239 / 10%), #83C4FF), url(images/asset\ 19.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+.treatment{
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+    padding: 14% 10%;
+    background: linear-gradient(0deg, rgba(0,0,255,0.8), rgb(229 236 243 / 60%)), url(images/asset\ 20.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+#contact h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 10px;
+}
+#contact p{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+#contact a{
+    display: inline-block;
+    color: #fff;
+    display: inline-block;
+    padding: 9px 24px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    transition: 0.5s;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 30px;
+    margin-left: 27px;
+    transition: all .3s;
+    cursor: pointer;
+}
+#contact a:hover{
+    background-color: #fff;
+    color: var(--basic-color);
+}
+
+/*footer start*/
+footer{
+    background-color: #1f1f1f;
+    color: #fff;
+}
+.details{
+    padding: 10% 10% 11%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    gap: 3rem;
+}
+.details img{
+    margin-bottom: 30px;
+}
+.details h1{
+    font-size: 22px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+.details P{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: white;
+    opacity: 0.7;
+    margin-bottom: 45px;
+}
+.text6 ul li a{
+    font-size: 16px;
+    color: #BABABA;
+    line-height: 42px;
+    transition: all ease-in .4s;
+    cursor: pointer;
+}
+.text6 ul li a:hover{
+    color: var(--basic-color);
+}
+.text6 i{
+    padding: 15px;
+    background-color: #707070;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #BABABA;
+    cursor: pointer;
+    transition: all ease-in .4s;
+}
+.text6 i:hover{
+    color: #fff;
+}
+/*footer end*/
+
+/*copyright start*/
+.copyright{
+    background-color: black;
+}
+.copyright p{
+    text-align: center;
+    color: var(--p-color);
+    padding: 30px 0;
+}
+.copyright p i{
+    font-size: 20px;
+}
+.copyright p a{
+    color: var(--basic-color);
+}
+/*copyright*/
+
+
+/*laptop screen*/
+@media (min-width:1201px) and (max-width:1300px){
+    .box {
+        grid-template-columns: repeat(auto-fit,minmax(320px,auto));
+    }
+    .box div:nth-child(1){
+        padding-left: 30px;
+    }
+    #contact h3 {
+        font-size: 15px;
+    }
+    #contact p {
+        font-size: 11px;
+    }
+}
+    
+/*tablet view*/
+@media (min-width:992px) and (max-width:1200px){
+    #home{
+        background-position: center;
+    }
+    header {
+        padding: 0 3%;
+    }
+    header .appointment {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+    header a{
+        padding: 8px 0px;
+        align-items: center;
+    }
+    header a {
+        font-size: 15px;
+    }
+    .text {
+        left: 3%;
+    }
+    .text h1 {
+        font-size: 40px;
+    }
+    .text h2 {
+        font-size: 47px;
+    }
+    .text p {
+        font-size: 16px;
+    }
+    .text a {
+        padding: 14px 17px;
+    }
+    .box {
+        padding: 0 3%;
+        grid-template-columns: repeat(auto-fit,minmax(160px,auto));
+    }
+    .box div:nth-child(1){
+        padding-right: 30px;
+    }
+    section {
+        padding: 9% 3%;
+    }
+    .header-top-area {
+        padding: 13px 2%;
+    }
+    #department{
+        padding: 9% 3%;
+    }
+    .mytab label {
+        background-color: #f5fbff;
+        display: inline-block;
+        padding: 30px 41px;
+    }
+    .click-tab .tab {
+        padding: 7% 3%;
+    }
+    #doctors {
+        padding: 17% 3% 10%;
+    }
+    #contact {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+    }
+    .number {
+        padding: 9% 23%;
+    }
+    .treatment{
+        padding: 7% 22%;
+    }
+    .details {
+        padding: 10% 3% 11%;
+    }
+}
+@media (max-width:991px){
+    header {
+        padding: 0 30px;
+    }
+    header a {
+        padding: 10px 0px;
+    }
+    header .nav{
+        position: absolute;
+        width: 100%;
+        top: -600px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        background-color: #f5fbff;
+        transition: all .5s;
+    }
+    header .nav li{
+        padding: 10px 10px;
+    }
+    header .nav li a{
+        color: black;
+        text-decoration: underline;
+    }
+    #menu-icon{
+        display: block;
+        font-size: 30px;
+    }
+    header .appointment{
+        display: none;
+    }
+    #check:checked ~ ul{
+        top: 100%;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .header-top-area {
+        padding: 8px 2%
+    }
+    #home {
+        background-position: center;
+        height: 62vh;
+    }
+    .text h1 {
+        font-size: 38px;
+    }
+    .text h2 {
+        font-size: 41px;
+    }
+    .text p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .text a {
+        padding: 15px 13px;
+    }
+    .text {
+        top: 20%;
+        left: 4%;
+    }
+    .box {
+        padding: 0 4%;
+        grid-template-columns: repeat(auto-fit,minmax(204px,auto));
+    }
+    .box div:nth-child(1){
+        padding-right: 20px;
+    }
+    .box h3 {
+        font-size: 19px;
+    }
+    .box .bed {
+        padding: 13px 8px;
+        font-size: 14px;
+    }
+    .docmed {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 7rem;
+    }
+    section {
+        padding: 15% 4%;
+    }
+    .docmed img:nth-child(2){
+        left: 44%;
+    }
+    .donec{
+        background-image: url(images/asset\ 17.png);
+        background-position: -37rem 0;
+    }
+    .mytab {
+        position: relative;
+    }
+    .mytab label {
+        background-color: #f5fbff;
+        display: inline-block;
+        padding: 23px 26px;
+        font-size: 15px;
+    }
+    .click-tab .tab {
+        align-items: center;
+        padding: 6% 30px;
+    }
+    .click-tab .tab img{
+        max-width: 100%;
+        width: 95rem;
+        height: auto;
+    }
+    #doctors {
+        padding: 5% 30px;
+    }
+    .expert{
+        grid-template-columns: repeat(auto-fit, minmax(309px, auto));
+    }
+    #contact {
+        grid-template-columns: 1fr;
+    }
+    .number {
+        padding: 12% 11%
+    }
+    .treatment{
+        padding: 12% 10%;
+    }
+    .details {
+        padding: 10% 4% 11%;
+        grid-template-columns: repeat(auto-fit, minmax(322px, auto));
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    .header-top-area {
+        padding: 3px 4%;
+        display: block;
+        text-align: center;
+    }
+    .header-top-area .contact {
+        display: flex;
+        padding: 0 20%;
+    }
+    header {
+        padding: 0 6%;
+    }
+    #home {
+        background-position: center;
+        height: 88vh;
+    }
+    .text h1 {
+        font-size: 40px;
+    }
+    .text h2{
+        font-size: 44px;
+    }
+    .text p {
+        font-size: 15px;
+    }
+    .text a {
+        padding: 12px 17px;
+    }
+    .text {
+        top: 40%;
+        left: 37px;
+    }
+    .box {
+        padding: 0 116px;
+    }
+    .box div{
+        padding: 20px;
+    }
+    .docmed {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5rem;
+        padding: 10% 6%;
+    }
+    .docmed img:nth-child(2) {
+        display: none;
+    }
+    .docmed .image img {
+        max-width: 100%;
+        width: 100%;
+    }
+    section {
+        padding: 9% 6%;
+    }
+    .service {
+        grid-template-columns: 1fr;
+    }
+    .donec {
+        background-position: -44rem 0;
+    }
+    .donec .text4 p {
+        font-size: 14px;
+    }
+    .mytab {
+        position: relative;
+        padding: 0 6%;
+    }
+    .mytab label {
+        padding: 30px 28px;
+        font-size: 15px;
+    }
+    .click-tab .tab {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 7% 6%;
+        gap: 30px;
+    }
+    .pic-9 img{
+        width: 100%;
+    }
+    #contact{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #doctors {
+        padding: 17% 6% 10%;
+    }
+    .expert {
+        grid-template-columns: repeat(auto-fit, minmax(190px, auto));
+    }
+    #doctors h1 {
+        margin-top: 40rem;
+    }
+    .treatment {
+        padding: 13% 10%;
+    }
+    .number {
+        padding: 13% 11%
+    }
+    #contact h3 {
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    .details {
+        padding: 10% 6% 11%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .copyright p {
+        padding: 17px 0;
+        font-size: 12px;
+    }
+}
+@media(max-width:575px){
+    
+    .header-top-area {
+        padding: 13px 19px;
+        text-align: center;
+        display: block;
+    }
+    .header-top-area .contact {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    header {
+        padding: 0 13px;
+    }
+    #home {
+        width: 100%;
+        height: 62vh;
+        background-image: url(images/asset\ 16.png);
+        background-repeat: no-repeat;
+        background-position: 69rem 49rem;
+        background-position: center;
+    }
+    .text h1 {
+        font-size: 36px;
+    }
+    .text h2 {
+        font-size: 33px;
+    }
+    .text p {
+        font-size: 15px;
+    }
+    .text a {
+        padding: 17px 42px;
+        font-size: 14px;
+        background-color: var(--basic-color);
+        color: #fff;
+        border: 1px solid var(--basic-color);
+        transition: all .1s;
+    }
+    .text a:hover{
+        background-color: #fff;
+        border: 1px solid var(--basic-color);
+    }
+    .text {
+        position: absolute;
+        top: 25%;
+        left: 4%;
+    }
+    .box{
+        padding: 0 0;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .box div{
+        padding: 0 13px;
+    }
+    .box div:nth-child(2) {
+        padding-left: 13px;
+    }
+    .box div:nth-child(3) {
+        padding-left: 13px;
+    }
+    .service {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .service .test .text4 {
+        padding-left: 7px;
+    }
+    .docmed {
+        padding: 10% 13px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .docmed img:nth-child(2) {
+        display: none;
+    }
+    .docmed .image img {
+        max-width: 100%;
+        width: 100%;
+    }
+    .mytab {
+        position: relative;
+        padding: 0 13px;
+        display: block;
+    }
+    .click-tab .tab {
+        background-color: #fff;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        position: absolute;
+        left: 0;
+        top: 17rem;
+    }
+    .click-tab .tab {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 2% 13px;
+        gap: 30px;
+    }
+    .pic-9 img{
+        width: 100%;
+    }
+    .mytab label {
+        background-color: #f5fbff;
+        display: inline-block;
+        padding: 30px 80px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    section {
+        padding: 9% 13px;
+    }
+    #doctors {
+        padding: 17% 13px 10%;
+    }
+    #doctors h1 {
+        font-size: 28px;
+    }
+    #contact {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .number {
+        display: block;
+        padding: 10% 11%;
+    }
+    .treatment {
+        display: block;
+        padding: 9% 10%;
+    }
+    #contact p {
+        margin: 20px 0;
+    }
+    #contact h3 {
+        font-size: 23px;
+    }
+    .details {
+        padding: 10% 13px 9%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .details h1 {
+        margin-bottom: 20px;
+    }
+    .copyright p {
+        padding: 10px 13px;
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
